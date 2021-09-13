@@ -1,4 +1,5 @@
 default:
+	stuff_env/Scripts/activate.ps1
 	make setup_dev
 	make tox
 
