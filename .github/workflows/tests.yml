@@ -1,8 +1,9 @@
 name: Tests
 
 on:
-  - push
-  - pull_requests
+  push:
+    branches:
+      - master
 
 jobs:
   test:
