@@ -9,6 +9,6 @@ def capture_stdout(monkeypatch):
     def fake_write(s):
         buffer["stdout"] += s
         buffer["write_calls"] += 1
-    
+
     monkeypatch.setattr(sys.stdout, 'write', fake_write)
     return buffer
